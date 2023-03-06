@@ -2,11 +2,11 @@
 
 install_wukong(){
     os=$1
-    read -p "请选择安装源 [ALIYUN/github]:" source
+    read -p "请选择安装源 [gitee/github]:" source
     source=$(echo $source | tr 'A-Z' 'a-z')
-    if [[ ${source} == "aliyun" || ${source} == "" ]]
+    if [[ ${source} == "gitee" || ${source} == "" ]]
     then
-        wukong="https://code.aliyun.com/qingshanglishao/wukong-robot.git"
+        wukong="https://gitee.com/wzpan/wukong-robot.git"
         snowboy="https://code.aliyun.com/qingshanglishao/snowboy.git"
     elif [[ $source == "github" ]]
     then
